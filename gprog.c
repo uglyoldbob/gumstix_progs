@@ -32,7 +32,7 @@ int main (int argc, char *argv[])
 	XStoreName(display, frame_window, "Hello World Example");
 	XSelectInput(display, frame_window, ExposureMask | StructureNotifyMask);
 
-	fontinfo = XLoadQueryFont(display, "10x20");
+	fontinfo = XLoadQueryFont(display, "fixed");
 	gr_values.font = fontinfo->fid;
 	gr_values.foreground = XBlackPixel(display, 0);
 	graphical_context = XCreateGC(display, frame_window, 
