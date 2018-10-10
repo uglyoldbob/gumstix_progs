@@ -1,6 +1,6 @@
 AUTOMAKE_OPTIONS = foreign
 
-confsubdir = $(sysconfdir)/gprog
+confsubdir = $(sysconfdir)/gprogs
 
 bin_PROGRAMS = gprogs
 gprogs_LDFLAGS = $(GTK_LIBS)
